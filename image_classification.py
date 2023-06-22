@@ -31,6 +31,7 @@ image_exts = ["jpeg", "jpg", "bmp", "png"]
 
 for image_class in os.listdir(data_dir):
     for image in os.listdir(os.path.join(data_dir, image_class)):
+        os.system('find . -name .DS_Store | xargs rm')
         image_path = os.path.join(data_dir, image_class, image)
         try:
             img = cv2.imread(image_path)
