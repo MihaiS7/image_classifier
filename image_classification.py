@@ -1,4 +1,5 @@
 # ///////////     DELETING '.DS_Store' file       ///////////
+# You can delete it if you do not want to delete this file
 import os
 try:
     os.system('find . -name .DS_Store | xargs rm')
