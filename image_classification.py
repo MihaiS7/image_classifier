@@ -137,6 +137,7 @@ for batch in test.as_numpy_iterator():
     pre.update_state(y, yhat)
     re.update_state(y, yhat)
     acc.update_state(y, yhat)
+    
 print(f"Precision: {pre.result().numpy()}, Recall: {re.result().numpy()}, Accuracy: {acc.result().numpy()}")
 
 # 4.2 Test
